@@ -1,0 +1,8 @@
+@use './styles/variables';
+
+h1 {
+  text-align: center;
+  color: variables.$grey-600;
+  margin-top: variables.$size-800;
+  margin-bottom: variables.$size-200;
+}

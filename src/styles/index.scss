@@ -1,0 +1,48 @@
+@use 'variables';
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('../assets/fonts/JetBrainsMono-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  background: variables.$gradient1;
+  letter-spacing: 0;
+}
+
+input, button, textarea, select {
+  font-family: inherit;
+}
+
+.text-preset-1 {
+  font-size: variables.$size-400;
+  line-height: variables.$size-525;
+}
+
+.text-preset-2 {
+  font-size: variables.$size-300;
+  line-height: variables.$size-400;
+}
+
+.text-preset-3 {
+  font-size: variables.$size-225;
+  line-height: variables.$size-300;
+}
+
+.text-preset-4 {
+  font-size: variables.$size-200;
+  line-height: variables.$size-250;
+}
