@@ -24,6 +24,13 @@
     background-color: inherit;
     border: none;
     color: variables.$green-200;
+    display: flex;
+    gap: variables.$size-100;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     svg {
       width: 17.5px;
