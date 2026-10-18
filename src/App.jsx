@@ -9,6 +9,7 @@ const App = () => {
     <>
       <h1 className="text-preset-4">Password Generator</h1>
       <TextField />
+      <Form />
     </>
   )
 }
