@@ -1,0 +1,15 @@
+@use '../../styles/variables';
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: variables.$size-200;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  height: variables.$size-250;
+  width: variables.$size-250;
+  cursor: pointer;
+  border: 2px solid variables.$grey-200;
+}

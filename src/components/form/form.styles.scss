@@ -1,0 +1,16 @@
+@use '../../styles/variables';
+
+form {
+  background-color: variables.$grey-800;
+  margin-top: variables.$size-200;
+  margin-left: variables.$size-200;
+  margin-right: variables.$size-200;
+  padding: variables.$size-200;
+
+  .checkbox-section {
+    display: flex;
+    flex-direction: column;
+    gap: variables.$size-200;
+    margin: variables.$size-400 auto;
+  }
+}

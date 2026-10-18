@@ -1,2 +1,21 @@
 @use '../../styles/variables';
 
+label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grey-200 {
+  color: variables.$grey-200;
+}
+
+.slider-value {
+  margin-right: variables.$size-175;
+  color: variables.$green-200;
+}
+
+#passwordLength {
+  width: 100%;
+  color: variables.$green-200;
+}

@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import './slider.styles.scss'
 
 const Slider = () => {
   const [sliderValue, setSliderValue] = useState(4)
@@ -8,7 +9,7 @@ const Slider = () => {
 
   return (
     <>
-      <label htmlFor="passwordLength"><span>Character Length</span><span>{sliderValue}</span></label>
+      <label htmlFor="passwordLength"><span className="text-preset-4 grey-200">Character Length</span><span className="slider-value text-preset-2">{sliderValue}</span></label>
       <input id="passwordLength" type="range" min="4" max="14" step="1" onChange={handleChange}/>
     </>
   )

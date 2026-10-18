@@ -29,10 +29,12 @@ const Form = () => {
   return (
     <form>
       <Slider />
-      <Checkbox label="Include Uppercase Letters" checked={hasUppercase} onChange={handleUppercaseChange} />
-      <Checkbox label="Include Lowercase Letters" checked={hasLowercase} onChange={handleLowercaseChange} />
-      <Checkbox label="Include Numbers" checked={hasNumbers} onChange={handleNumbersChange} />
-      <Checkbox label="Include Symbols" checked={hasSymbols} onChange={handleSymbolsChange} />
+      <div className="checkbox-section">
+        <Checkbox label="Include Uppercase Letters" checked={hasUppercase} onChange={handleUppercaseChange}/>
+        <Checkbox label="Include Lowercase Letters" checked={hasLowercase} onChange={handleLowercaseChange}/>
+        <Checkbox label="Include Numbers" checked={hasNumbers} onChange={handleNumbersChange}/>
+        <Checkbox label="Include Symbols" checked={hasSymbols} onChange={handleSymbolsChange}/>
+      </div>
       <StrengthOutput />
       <GenerateButton />
     </form>

@@ -5,12 +5,10 @@ const Checkbox = ({label, checked, onChange}) => {
   const id = useId()
 
   return (
-    <>
-      <label htmlFor={id}>
-        <input type="checkbox" id={id} checked={checked} onChange={onChange}/>
-      </label>
-      <span>{label}</span>
-    </>
+    <div className="checkbox-container">
+      <input type="checkbox" id={id} checked={checked} onChange={onChange}/>
+      <label htmlFor={id}>{label}</label>
+    </div>
   )
 }
 
