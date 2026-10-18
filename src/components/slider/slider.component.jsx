@@ -1,16 +1,29 @@
 import {useState} from 'react'
+import * as SliderPrimitive from '@radix-ui/react-slider'
 import './slider.styles.scss'
 
 const Slider = () => {
-  const [sliderValue, setSliderValue] = useState(4)
-  const handleChange = (event) => {
-    setSliderValue(event.target.value)
-  }
+  const [value, setValue] = useState([0])
 
   return (
     <>
-      <label htmlFor="passwordLength"><span className="text-preset-4 grey-200">Character Length</span><span className="slider-value text-preset-2">{sliderValue}</span></label>
-      <input id="passwordLength" type="range" min="4" max="14" step="1" onChange={handleChange}/>
+      <div className="slider-label">
+        <span className="text-preset-4 grey-200">Character Length</span>
+        <span className="slider-value text-preset-2">{value[0]}</span>
+      </div>
+      <SliderPrimitive.Root
+        className="slider-root"
+        min={0}
+        max={14}
+        step={1}
+        value={value}
+        onValueChange={setValue}
+      >
+        <SliderPrimitive.Track className="slider-track">
+          <SliderPrimitive.Range className="slider-range" />
+        </SliderPrimitive.Track>
+        <SliderPrimitive.Thumb className="slider-thumb" aria-label="Password length" />
+      </SliderPrimitive.Root>
     </>
   )
 }

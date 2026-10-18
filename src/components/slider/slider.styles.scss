@@ -1,6 +1,6 @@
 @use '../../styles/variables';
 
-label {
+.slider-label {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,7 +15,42 @@ label {
   color: variables.$green-200;
 }
 
-#passwordLength {
+.slider-root {
+  position: relative;
+  display: flex;
+  align-items: center;
   width: 100%;
-  color: variables.$green-200;
+  height: variables.$size-300;
+  touch-action: pan-y;
+}
+
+.slider-track {
+  background: variables.$grey-850;
+  position: relative;
+  height: variables.$size-100;
+  border-radius: variables.$size-100;
+  width: 100%;
+}
+
+.slider-range {
+  position: absolute;
+  background: variables.$green-200;
+  border-radius: variables.$size-100;
+  height: 100%;
+}
+
+.slider-thumb {
+  display: block;
+  width: variables.$size-350;
+  height: variables.$size-350;
+  background: variables.$white;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    background: variables.$grey-850;
+    border: 2px solid variables.$green-200;
+  }
 }
