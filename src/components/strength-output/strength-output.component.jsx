@@ -1,4 +1,4 @@
-import './strength-output.component.css'
+import './strength-output.styles.scss'
 
 const StrengthOutput = () => {
   return (

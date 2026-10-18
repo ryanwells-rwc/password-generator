@@ -1,4 +1,4 @@
-import './checkbox.component.scss'
+import './checkbox.styles.scss'
 import {useId} from "react"
 
 const Checkbox = ({label, checked, onChange}) => {

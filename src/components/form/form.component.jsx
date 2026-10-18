@@ -2,6 +2,7 @@ import {useState} from "react";
 import Slider from "../slider/slider.component.jsx"
 import Checkbox from "../checkbox/checkbox.component.jsx";
 import StrengthOutput from "../strength-output/strength-output.component.jsx";
+import GenerateButton from "../generate-button/generate-button.component.jsx";
 import './form.styles.scss'
 
 const Form = () => {

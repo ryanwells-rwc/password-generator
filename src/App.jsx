@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.scss'
 import TextField from "./components/text-field/text-field.component.jsx";
+import Form from "./components/form/form.component.jsx";
 
 const App = () => {
   const [count, setCount] = useState(0)
