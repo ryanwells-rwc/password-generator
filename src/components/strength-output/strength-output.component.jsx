@@ -1,8 +1,8 @@
 import './strength-output.styles.scss'
 
-const StrengthOutput = ({strength}) => {
-  const labels = ['', 'TOO WEAK!', 'WEAK', 'MEDIUM', 'STRONG']
+const labels = ['', 'TOO WEAK!', 'WEAK', 'MEDIUM', 'STRONG']
 
+const StrengthOutput = ({strength}) => {
   return (
     <div className="output-container">
       <span className="grey-600 text-preset-4">STRENGTH</span>

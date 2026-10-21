@@ -1,8 +1,10 @@
 import './generate-button.styles.scss'
+import IconArrowRight from '../../assets/icons/icon-arrow-right.svg?react'
 
 const GenerateButton = ({onClick}) => {
   return (
-    <button type="button" onClick={onClick}>GENERATE</button>
+    <button className="text-preset-4 grey-800" type="button" onClick={onClick}><span className="mr-16">GENERATE</span><IconArrowRight /></button>
   )
 }
+
 export default GenerateButton

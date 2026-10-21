@@ -1,0 +1,18 @@
+@use '../../styles/variables';
+
+button {
+  margin-top: variables.$size-200;
+  padding-top: variables.$size-225;
+  padding-bottom: variables.$size-225;
+  width: 100%;
+  background-color: variables.$green-200;
+  border: none;
+}
+
+.grey-800 {
+  color: variables.$grey-800;
+}
+
+.mr-16 {
+  margin-right: variables.$size-200;
+}
