@@ -1,8 +1,8 @@
 import './generate-button.styles.scss'
 
-const GenerateButton = () => {
+const GenerateButton = ({onClick}) => {
   return (
-    <button>GENERATE</button>
+    <button type="button" onClick={onClick}>GENERATE</button>
   )
 }
 export default GenerateButton

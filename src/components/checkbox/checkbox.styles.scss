@@ -4,6 +4,10 @@
   display: flex;
   align-items: center;
   gap: variables.$size-200;
+
+  label {
+    color: variables.$grey-200;
+  }
 }
 
 .checkbox-wrapper {

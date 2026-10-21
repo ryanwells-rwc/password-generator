@@ -26,6 +26,12 @@ const Form = () => {
     setHasSymbols(e.target.checked)
   }
 
+  const [strength, setStrength] = useState(0)
+
+  const handleGenerate = () => {
+    setStrength(Number(hasUppercase) + Number(hasLowercase) + Number(hasNumbers) + Number(hasSymbols))
+  }
+
   return (
     <form>
       <Slider />
@@ -35,8 +41,8 @@ const Form = () => {
         <Checkbox label="Include Numbers" checked={hasNumbers} onChange={handleNumbersChange}/>
         <Checkbox label="Include Symbols" checked={hasSymbols} onChange={handleSymbolsChange}/>
       </div>
-      <StrengthOutput />
-      <GenerateButton />
+      <StrengthOutput strength={strength} />
+      <GenerateButton onClick={handleGenerate} />
     </form>
   )
 }

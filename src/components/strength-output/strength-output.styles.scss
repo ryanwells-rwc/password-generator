@@ -1,0 +1,48 @@
+@use '../../styles/variables';
+
+.output-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: variables.$grey-850;
+  padding: variables.$size-250 variables.$size-400;
+
+  .grey-600 {
+    color: variables.$grey-600;
+  }
+
+  .strength-display {
+    display: flex;
+    align-items: center;
+    gap: variables.$size-200;
+
+    output {
+      .rectangles {
+        display: flex;
+        gap: variables.$size-100;
+
+        &[data-strength="1"] .filled {
+          background-color: variables.$red-500;
+        }
+
+        &[data-strength="2"] .filled {
+          background-color: variables.$orange-400;
+        }
+
+        &[data-strength="3"] .filled {
+          background-color: variables.$yellow-300;
+        }
+
+        &[data-strength="4"] .filled {
+          background-color: variables.$green-200;
+        }
+
+        .rectangle {
+          width: variables.$size-125;
+          height: variables.$size-350;
+          border: 2px solid variables.$grey-200;
+        }
+      }
+    }
+  }
+}
