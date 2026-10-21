@@ -2,24 +2,25 @@
 
 .text-field {
   background-color: variables.$grey-800;
-  height: variables.$size-800;
   margin: 0 variables.$size-200;
+  padding: variables.$size-200 0;
   display: flex;
   align-items: center;
   gap: variables.$size-200;
 
   input {
     width: 100%;
-    height: 100%;
     color: variables.$grey-700;
     background-color: inherit;
     border: none;
-    margin: variables.$size-200 auto variables.$size-200 variables.$size-200;
+    margin-left: variables.$size-200;
   }
 
   button {
     width: auto;
+    margin-top: 0;
     margin-right: variables.$size-200;
+    padding: 0;
     background-color: inherit;
     border: none;
     color: variables.$green-200;
