@@ -11,7 +11,6 @@
 }
 
 .slider-value {
-  margin-right: variables.$size-175;
   color: variables.$green-200;
 }
 
@@ -28,7 +27,6 @@
   background: variables.$grey-850;
   position: relative;
   height: variables.$size-100;
-  border-radius: variables.$size-100;
   width: 100%;
 }
 
@@ -52,5 +50,21 @@
     outline: none;
     background: variables.$grey-850;
     border: 2px solid variables.$green-200;
+  }
+}
+
+@media (min-width: 768px) {
+  .slider-value {
+    font-size: variables.$size-400;
+    line-height: variables.$size-525;
+  }
+
+  .slider-track {
+    margin-right: variables.$size-100;
+  }
+
+  .char-length {
+    font-size: variables.$size-225;
+    line-height: variables.$size-300;
   }
 }

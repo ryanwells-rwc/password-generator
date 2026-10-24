@@ -32,14 +32,48 @@
     gap: variables.$size-100;
     align-items: center;
 
-    &:hover {
-      cursor: pointer;
-      color: variables.$white;
+    cursor: pointer;
+
+    @media (hover: hover) {
+      &:hover {
+        color: variables.$white;
+        border: none;
+      }
+    }
+
+    @media (hover: none) {
+      &:active,
+      &:focus,
+      &:focus-visible {
+        color: variables.$green-200;
+        outline: none;
+        border: none;
+      }
     }
 
     svg {
       width: 17.5px;
       height: 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .text-field {
+    width: 540px;
+
+    input {
+      font-size: variables.$size-400;
+      line-height: variables.$size-525;
+    }
+
+    button {
+      margin-right: variables.$size-400;
+
+      svg {
+        width: 21px;
+        height: 24px;
+      }
     }
   }
 }

@@ -46,3 +46,12 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .output-container {
+    .strength-label {
+      font-size: variables.$size-225;
+      line-height: variables.$size-300;
+    }
+  }
+}

@@ -14,3 +14,9 @@ form {
     margin: variables.$size-400 auto;
   }
 }
+
+@media (min-width: 768px) {
+  form {
+    width: 540px;
+  }
+}

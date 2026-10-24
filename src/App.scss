@@ -6,3 +6,17 @@ h1 {
   margin-top: variables.$size-800;
   margin-bottom: variables.$size-200;
 }
+
+@media (min-width: 768px) {
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: variables.$size-300;
+      line-height: variables.$size-400;
+      margin-bottom: variables.$size-400;
+    }
+  }
+}

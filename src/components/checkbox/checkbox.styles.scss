@@ -7,6 +7,8 @@
 
   label {
     color: variables.$grey-200;
+    font-size: variables.$size-200;
+    line-height: variables.$size-250;
   }
 }
 
@@ -64,4 +66,13 @@
   pointer-events: none;
   width: 14px;
   height: 12px;
+}
+
+@media (min-width: 768px) {
+  .checkbox-container {
+    label {
+      font-size: variables.$size-225;
+      line-height: variables.$size-300;
+    }
+  }
 }

@@ -5,7 +5,7 @@ const labels = ['', 'TOO WEAK!', 'WEAK', 'MEDIUM', 'STRONG']
 const StrengthOutput = ({strength}) => {
   return (
     <div className="output-container">
-      <span className="grey-600 text-preset-4">STRENGTH</span>
+      <span className="grey-600 text-preset-4 strength-label">STRENGTH</span>
       <div className="strength-display">
         <span className="grey-200 text-preset-3">{labels[strength]}</span>
         <output>

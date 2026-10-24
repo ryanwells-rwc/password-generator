@@ -8,7 +8,7 @@ const Slider = () => {
   return (
     <>
       <div className="slider-label">
-        <span className="text-preset-4 grey-200">Character Length</span>
+        <span className="text-preset-4 grey-200 char-length">Character Length</span>
         <span className="slider-value text-preset-2">{length}</span>
       </div>
       <SliderPrimitive.Root
