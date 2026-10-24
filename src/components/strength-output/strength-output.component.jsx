@@ -8,8 +8,8 @@ const StrengthOutput = ({strength}) => {
       <span className="grey-600 text-preset-4 strength-label">STRENGTH</span>
       <div className="strength-display">
         <span className="grey-200 text-preset-3">{labels[strength]}</span>
-        <output>
-          <div className="rectangles" data-strength={strength}>
+        <output aria-label={strength > 0 ? `Password strength: ${labels[strength]}` : ''} aria-live="polite">
+          <div className="rectangles" data-strength={strength} aria-hidden="true">
             {
               [0, 1, 2, 3].map((index) => (
                 <div key={index} className={`rectangle ${index < strength ? 'filled' : ''}`}></div>

@@ -18,5 +18,7 @@ form {
 @media (min-width: 768px) {
   form {
     width: 540px;
+    padding-left: variables.$size-400;
+    padding-right: variables.$size-400;
   }
 }
