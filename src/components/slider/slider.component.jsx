@@ -14,7 +14,7 @@ const Slider = () => {
       <SliderPrimitive.Root
         className="slider-root"
         min={0}
-        max={14}
+        max={20}
         step={1}
         value={[length]}
         onValueChange={(value) => setLength(value[0])}

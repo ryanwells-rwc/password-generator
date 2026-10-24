@@ -14,7 +14,7 @@ export function PasswordProvider({ children }) {
     setOptions(prev => ({ ...prev, [key]: value }));
   };
 
-  const [length, setLength] = useState(14);
+  const [length, setLength] = useState(0);
   const [password, setPassword] = useState('');
   const [strength, setStrength] = useState(0);
 

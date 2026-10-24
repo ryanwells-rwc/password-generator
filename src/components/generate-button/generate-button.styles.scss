@@ -7,6 +7,12 @@ button {
   width: 100%;
   background-color: variables.$green-200;
   border: none;
+
+  &:hover {
+    color: variables.$green-200;
+    background-color: variables.$grey-800;
+    border: 2px solid variables.$green-200;
+  }
 }
 
 .grey-800 {

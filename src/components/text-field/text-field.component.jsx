@@ -8,6 +8,8 @@ const TextField = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
+    if (!password) return;
+
     try {
       await navigator.clipboard.writeText(password);
       setCopied(true);

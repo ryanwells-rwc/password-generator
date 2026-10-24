@@ -10,10 +10,14 @@
 
   input {
     width: 100%;
-    color: variables.$grey-700;
+    color: variables.$grey-200;
     background-color: inherit;
     border: none;
     margin-left: variables.$size-200;
+
+    &::placeholder {
+      color: variables.$grey-700;
+    }
   }
 
   button {
@@ -30,6 +34,7 @@
 
     &:hover {
       cursor: pointer;
+      color: variables.$white;
     }
 
     svg {
