@@ -1,7 +1,7 @@
 import './text-field.styles.scss'
 import IconCopy from '../../assets/icons/icon-copy.svg?react'
 import {useState} from "react";
-import {usePassword} from "../../context/PasswordContext.jsx";
+import {usePassword} from "../../contexts/password.context.jsx";
 
 const TextField = () => {
   const {password} = usePassword();

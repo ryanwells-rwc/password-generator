@@ -1,6 +1,6 @@
-import * as SliderPrimitive from '@radix-ui/react-slider'
 import './slider.styles.scss'
-import {usePassword} from "../../context/PasswordContext.jsx";
+import * as SliderPrimitive from '@radix-ui/react-slider'
+import {usePassword} from "../../contexts/password.context.jsx";
 
 const Slider = () => {
   const {length, setLength} = usePassword()

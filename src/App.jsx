@@ -1,7 +1,7 @@
 import './App.scss'
 import TextField from "./components/text-field/text-field.component.jsx";
 import Form from "./components/form/form.component.jsx";
-import {PasswordProvider} from "./context/PasswordContext.jsx";
+import {PasswordProvider} from "./contexts/password.context.jsx";
 
 const App = () => {
   return (
