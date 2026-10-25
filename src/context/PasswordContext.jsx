@@ -11,7 +11,14 @@ export function PasswordProvider({ children }) {
   });
 
   const setOption = (key, value) => {
-    setOptions(prev => ({ ...prev, [key]: value }));
+    setOptions(prev => {
+      const next = { ...prev, [key]: value };
+      const activeCount = Object.values(next).filter(Boolean).length;
+      if (activeCount > length) {
+        setLength(activeCount);
+      }
+      return next;
+    });
   };
 
   const [length, setLength] = useState(0);
