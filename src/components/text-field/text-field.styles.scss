@@ -20,7 +20,7 @@
     }
   }
 
-  button {
+  .copy-button {
     width: auto;
     margin-top: 0;
     margin-right: variables.$size-200;
@@ -80,7 +80,7 @@
       margin-left: variables.$size-400;
     }
 
-    button {
+    .copy-button {
       margin-right: variables.$size-400;
 
       svg {

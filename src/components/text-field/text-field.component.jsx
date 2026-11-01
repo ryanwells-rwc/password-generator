@@ -22,7 +22,7 @@ const TextField = () => {
   return (
     <div className="text-field">
       <input value={password} type="text" className="text-preset-2" placeholder="P4$5W0rD!" readOnly aria-readonly="true" aria-live="polite" aria-label="Generated password"/>
-      <button onClick={handleCopy} aria-label="Copy password to clipboard" aria-live="assertive">
+      <button className="copy-button" onClick={handleCopy} aria-label="Copy password to clipboard" aria-live="assertive">
         {copied ? 'COPIED' : ''}
         <IconCopy/>
       </button>
