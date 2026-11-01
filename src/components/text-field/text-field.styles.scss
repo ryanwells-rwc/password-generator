@@ -46,14 +46,24 @@
       &:focus,
       &:focus-visible {
         color: variables.$green-200;
-        outline: none;
-        border: none;
+        //outline: none;
+        //border: none;
       }
     }
 
     svg {
       width: 17.5px;
       height: 20px;
+    }
+
+    &[data-status="failed"] {
+      color: variables.$red-500;
+
+      @media (hover: hover) {
+        &:hover {
+          color: variables.$red-500;
+        }
+      }
     }
   }
 
