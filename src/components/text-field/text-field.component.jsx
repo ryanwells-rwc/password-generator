@@ -5,24 +5,24 @@ import {usePassword} from "../../contexts/password.context.jsx";
 
 const TextField = () => {
   const {password} = usePassword();
-  const [copied, setCopied] = useState('idle');
+  const [status, setStatus] = useState('idle');
 
   const handleCopy = async () => {
     if (!password) return;
 
     try {
       await navigator.clipboard.writeText(password);
-      setCopied('copied');
-      setTimeout(() => setCopied('idle'), 3000);
+      setStatus('copied');
+      setTimeout(() => setStatus('idle'), 3000);
     } catch (error) {
       console.error('Failed to copy text: ', error);
-      setCopied('failed');
-      setTimeout(() => setCopied('idle'), 3000);
+      setStatus('failed');
+      setTimeout(() => setStatus('idle'), 3000);
     }
   };
 
   const getButtonText = () => {
-    switch (copied) {
+    switch (status) {
       case 'copied':
         return 'COPIED';
       case 'failed':
@@ -33,7 +33,7 @@ const TextField = () => {
   };
 
   const getAccessibilityText = () => {
-    switch (copied) {
+    switch (status) {
       case 'copied':
         return 'Password copied to clipboard';
       case 'failed':
@@ -46,7 +46,7 @@ const TextField = () => {
   return (
     <div className="text-field">
       <input value={password} type="text" className="text-preset-2" placeholder="P4$5W0rD!" readOnly aria-readonly="true" aria-live="polite" aria-label="Generated password"/>
-      <button className="copy-button" onClick={handleCopy} aria-label="Copy password to clipboard" role="status" data-status={copied}>
+      <button className="copy-button" onClick={handleCopy} aria-label="Copy password to clipboard" role="status" data-status={status}>
         {getButtonText()}
         <IconCopy/>
       </button>
